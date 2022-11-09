@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Todo List</title>
+</head>
+<body>
+    <div class="controls">
+        <button onclick="moveTop()" >Move to top</button>
+        <button onclick="moveBottom()" >Move to bottom</button>
+        <button onclick="moveOneUp()" >Move up one</button>
+        <button onclick="moveOneDown()" >Move down one</button>
+    </div>
+    <div class="wrapper">
+            <h1>Vigyél fel elemeket a To-do Listára</h1>
+            <div class="container">
+            <input type="text" name="inputText" id="inputText">
+            <input type="button" value="Bevitel!" onclick="addToList(document.getElementById('inputText').value)">
+            <p id="ptag"></p>
+        </div>
+        <div id="theList"></div>
+    </div>
+</body>
+</html>
